@@ -23,7 +23,7 @@ public class ObstacleSpawner : MonoBehaviour
                     obj.transform.position = new Vector3(10, Random.Range(-5f, 5f), 0);
                 }
                 else {
-                    obj.transform.position = new Vector3(10, -5, 0);
+                    obj.transform.position = new Vector3(10, -5.6f, 0);
                 }
                 obj.transform.localScale = new Vector3(Random.Range(1f, 1.5f), Random.Range(0.7f, 1.5f), 1);
                 obj.SetActive(true);

@@ -517,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 7664962047150199210, guid: cd16ea3d2596803468f5dbe9f8c32c1e,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.63
       objectReference: {fileID: 0}
     - target: {fileID: 7664962047150199210, guid: cd16ea3d2596803468f5dbe9f8c32c1e,
         type: 3}
@@ -889,7 +889,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 5.627678
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -967,7 +967,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1209,8 +1209,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -1}
-  m_SizeDelta: {x: -364.16507, y: -136.37491}
+  m_AnchoredPosition: {x: -0.000061035156, y: 0}
+  m_SizeDelta: {x: -512.7103, y: -237.59972}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1425164606
 MonoBehaviour:
