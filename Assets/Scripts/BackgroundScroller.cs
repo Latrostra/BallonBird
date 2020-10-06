@@ -13,6 +13,7 @@ public class BackgroundScroller : MonoBehaviour
         material = GetComponent<Renderer>().material;
     }
 
+    /// Scroll background image in x axis
     private void Update() {
         float offset = speed * Time.time; 
         material.mainTextureOffset = new Vector2(offset, 0);

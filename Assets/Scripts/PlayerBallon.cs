@@ -29,6 +29,7 @@ public class PlayerBallon : MonoBehaviour
             TakeDamage();
         }
     }
+    
     public void TakeDamage() {
         health.SetHealth(1);
     }

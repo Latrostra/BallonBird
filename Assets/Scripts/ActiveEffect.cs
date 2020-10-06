@@ -11,6 +11,7 @@ public class ActiveEffect : MonoBehaviour
     private void Awake() {
         
     }
+    // Active effect on trigger
     private void OnTriggerStay2D(Collider2D col) {
         if (col.gameObject) {
             if (col.gameObject.GetComponent<PlayerBallon>()) {
