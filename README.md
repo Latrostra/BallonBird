@@ -6,8 +6,8 @@ Gracz:
 •	Gracz ma możliwość ruchu po osi Y (góra i dół)  
 •	Ruch w górę jest uzależniony od przekazanego wejścia przez gracza powiększa to wartość wektora szybkości w osi Y.
 Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość grawitacji pomniejsza wartość wektora przyspieszenia w osi Y.
-•	Wartość punktów życia jest z góry nadana przed startem programu. Gracz traci punkty życia, jeżeli dojdzie do kolizji między nim, a przeciwnikiem.
 •	Szybkość wzrostu wektora przyspieszenia jest z góry nadana przed startem programu.
+•	Wartość punktów życia jest z góry nadana przed startem programu. Gracz traci punkty życia, jeżeli dojdzie do kolizji między nim, a przeciwnikiem.
 •	Przy stracie wszystkich punktów życia, gracz przegrywa grę, skutkując przejście do menu restartu.
 Input:
 •	Lewy przycisk myszy – Ruch w górę. Zwiększenie wektora przyspieszenia.
