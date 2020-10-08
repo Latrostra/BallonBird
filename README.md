@@ -46,6 +46,8 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 •	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje. Tworzy to efekt paraboli lotu.
 
+![Image of enemy Movement](https://github.com/Latrostra/BallonBird/blob/master/picture1.PNG)
+
 Ui:
 
 Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
