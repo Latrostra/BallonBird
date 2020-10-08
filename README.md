@@ -3,6 +3,8 @@ Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę 
 
 Gracz:
 
+Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilościązdrowia.
+
 •	Gracz ma możliwość ruchu po osi Y (góra i dół)  
 
 •	Ruch w górę jest uzależniony od przekazanego wejścia przez gracza powiększa to wartość wektora szybkości w osi Y.
@@ -14,11 +16,11 @@ Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość graw
 
 •	Przy stracie wszystkich punktów życia, gracz przegrywa grę, skutkując przejście do menu restartu.
 
-• Komponent PlayerBallon odpowiada za wszyskie zależnośći do odpowiedniego działania obiektu gracza. (Input, Health)
-
 Input:
 
-•	Lewy przycisk myszy – Ruch w górę. Zwiększenie wektora przyspieszenia.
+W każdej klatce trwania gry komponent zwraca prawdę jeżeli w danej klatce lewy przycisk myszy jest wciśnięty. W przeciwnym wypadku zwraca fałsz.
+
+•	Lewy przycisk myszy – odpowiada za ruch w góre gracza w osi 
 
 • Implementacja interfejsu metody bool.
 
