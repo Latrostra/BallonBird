@@ -1,7 +1,7 @@
 # BallonBird
 Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę gracz zostaje nagrodzony wzrostem punktacji. Gracz przegrywa grę jeżeli skończą mu sie punkty życia.
 
-Gracz:
+<h2>Gracz<h2>:
 
 Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
 
@@ -46,9 +46,9 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 •	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje. Tworzy to efekt paraboli lotu.
 
-![Image of enemy Movement](https://github.com/Latrostra/BallonBird/blob/master/picture1.PNG)
+![Image of enemy Movement](https://github.com/Latrostra/BallonBird/blob/master/picture2.PNG)
 
-Ui:
+UI:
 
 Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
 
