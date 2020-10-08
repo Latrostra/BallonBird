@@ -3,7 +3,7 @@ Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę 
 
 Gracz:
 
-Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilościązdrowia.
+Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
 
 •	Gracz ma możliwość ruchu po osi Y (góra i dół)  
 
@@ -26,6 +26,8 @@ W każdej klatce trwania gry komponent zwraca prawdę jeżeli w danej klatce lew
 
 Przeciwnicy:
 
+Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwników przez komponent ObjectPooler do ObstacleSpawner. ObstacleSpawner komponent odpowiada na przygotowaniu araz aktywacji obiektu przeciwnika.
+
 •	Przeciwnicy są inicjalizowani przed startem rozgrywki (object pooling).
 
 •	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeźeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
@@ -40,11 +42,13 @@ Przeciwnicy:
 
 •	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje.
 
-• Działanie tego systemu polega na przekazywaniu dezaktywnych przeciwników przez komponent ObjectPooler do ObstacleSpawner. ObstacleSpawner komponent odpowiada na przygotowaniu araz aktywacji obiektu przeciwnika.
-
 Ui:
 
+Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
+
 •	Menu restartu pozwala na zaczęcie gry od początku lub zakończenie działania gry.
+
+•	W menu restartu podana jest wartość uzyskanego wyniku.
 
 •	Punkty zwiększają się o stała wartość podaną przed startem programu.
 
@@ -52,7 +56,6 @@ Ui:
 
 •	Ui zmienia się wraz z wystąpieniem odpowiedniego eventu.
 
-•	Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
 
 Środowisko:
 
