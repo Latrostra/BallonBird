@@ -65,6 +65,6 @@ Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i 
 
 ## Środowisko:
 
-*	Tło przesuwa swój wektor przesunięcia, skutkując niekończącą pętlę tekstury. Podział tła na wiele elementów pozwala na dostosowywanie szybkości zmiany wektora przesunięcia. Skutkuje to uzyskaniem efektu paralaksy.
+*	Tło przesuwa swój wektor przesunięcia, skutkując niekończącą pętlę tekstury. Podział tła na wiele elementów pozwala na dostosowywanie szybkości zmiany wektora przesunięcia. Skutkuje to uzyskaniem efektu paralaksy. Odpowiada za to komponent BackgroundScroller.
 
-*	Tło trzęsie się jeżeli dojdzie do kolizji gracza z obiektem aktywującym efekt.
+*	Tło trzęsie się jeżeli dojdzie do kolizji gracza z obiektem aktywującym efekt. 
