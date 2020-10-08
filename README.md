@@ -3,7 +3,7 @@ Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę 
 
 ## Gracz:
 
-Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
+Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia dla klasy PlayerBallon.
 
 *	Gracz ma możliwość ruchu po osi Y (góra i dół)
 
@@ -28,7 +28,7 @@ W każdej klatce trwania gry, komponent zwraca prawdę jeżeli w danej klatce le
 
 ## Przeciwnicy:
 
-Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwników przez komponent ObjectPooler do ObstacleSpawner. ObstacleSpawner komponent odpowiada na przygotowaniu araz aktywacji obiektu przeciwnika.
+Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwników przez komponent ObjectPooler do komponentu ObstacleSpawner. ObstacleSpawner odpowiada za przygotowanie oraz aktywacje obiektu przeciwnika.
 
 *	Przeciwnicy są inicjalizowani przed startem rozgrywki (object pooling).
 
