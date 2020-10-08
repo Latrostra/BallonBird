@@ -1,7 +1,7 @@
 # BallonBird
 Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę gracz zostaje nagrodzony wzrostem punktacji. Gracz przegrywa grę jeżeli skończą mu sie punkty życia.
 
-# Gracz:
+## Gracz:
 
 Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
 
@@ -18,7 +18,7 @@ Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość graw
 
 •	Przy stracie wszystkich punktów życia, gracz przegrywa grę, skutkując przejście do menu restartu.
 
-Input:
+## Input:
 
 W każdej klatce trwania gry, komponent zwraca prawdę jeżeli w danej klatce lewy przycisk myszy jest wciśnięty. W przeciwnym wypadku zwraca fałsz.
 
@@ -26,7 +26,7 @@ W każdej klatce trwania gry, komponent zwraca prawdę jeżeli w danej klatce le
 
 • Implementacja interfejsu metody bool.
 
-Przeciwnicy:
+## Przeciwnicy:
 
 Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwników przez komponent ObjectPooler do ObstacleSpawner. ObstacleSpawner komponent odpowiada na przygotowaniu araz aktywacji obiektu przeciwnika.
 
@@ -48,7 +48,7 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 ![Image of enemy Movement](https://github.com/Latrostra/BallonBird/blob/master/picture2.PNG)
 
-UI:
+## UI:
 
 Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
 
@@ -63,7 +63,7 @@ Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i 
 •	Ui zmienia się wraz z wystąpieniem odpowiedniego eventu.
 
 
-Środowisko:
+## Środowisko:
 
 •	Tło przesuwa swój wektor przesunięcia, skutkując niekończącą pętlę tekstury. Podział tła na wiele elementów pozwala na dostosowywanie szybkości zmiany wektora przesunięcia. Skutkuje to uzyskaniem efektu paralaksy.
 
