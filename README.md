@@ -60,7 +60,7 @@ Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i 
 
 *	Punkty przyznawane są za każdą ominiętą przeszkode.
 
-*	Ui zmienia się wraz z wystąpieniem odpowiedniego eventu.
+*	UI zmienia się wraz z wystąpieniem odpowiedniego eventu.
 
 
 ## Środowisko:
