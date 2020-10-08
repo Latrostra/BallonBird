@@ -18,9 +18,9 @@ Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość graw
 
 Input:
 
-W każdej klatce trwania gry komponent zwraca prawdę jeżeli w danej klatce lewy przycisk myszy jest wciśnięty. W przeciwnym wypadku zwraca fałsz.
+W każdej klatce trwania gry, komponent zwraca prawdę jeżeli w danej klatce lewy przycisk myszy jest wciśnięty. W przeciwnym wypadku zwraca fałsz.
 
-•	Lewy przycisk myszy – odpowiada za ruch w góre gracza w osi 
+•	Lewy przycisk myszy – odpowiada za ruch w góre gracza w osi Y.
 
 • Implementacja interfejsu metody bool.
 
@@ -32,15 +32,17 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 •	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeźeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
 
+•	Przeciwnicy pojawiają się w równych odstępach czasu, odstępy czasowe są z góry nadane przed startem gry.
+
 •	Po aktywacji obiektu przeciwnika, wektor pozycji przeciwnika jest resetowany do wartości podstawowych. 
 
 •	Przeciwnicy nie mają możliwości poruszania się w kierunku –X.
 
-•	Przeciwnicy pojawiają się w równych odstępach czasu, odstępy czasowe są z góry nadane przed startem gry.
+•	W grze występują 2 rodzaje przeciwników. 
 
-•	W grze występują 2 rodzaje przeciwników. Drzewo porusza się wyłącznie po osi X w kierunki –X o stałą wartość. Ptak porusza się po paraboli.
+• Drzewo porusza się wyłącznie po osi X w kierunki –X o stałą wartość.
 
-•	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje.
+•	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje. Tworzy to efekt paraboli lotu.
 
 Ui:
 
