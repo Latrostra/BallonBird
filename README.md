@@ -1,7 +1,7 @@
 # BallonBird
 Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę gracz zostaje nagrodzony wzrostem punktacji. Gracz przegrywa grę jeżeli skończą mu sie punkty życia.
 
-<h2>Gracz<h2>:
+<h2>Gracz:
 
 Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
 
