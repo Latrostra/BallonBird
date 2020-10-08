@@ -22,29 +22,29 @@ Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość graw
 
 W każdej klatce trwania gry, komponent zwraca prawdę jeżeli w danej klatce lewy przycisk myszy jest wciśnięty. W przeciwnym wypadku zwraca fałsz.
 
-•	Lewy przycisk myszy – odpowiada za ruch w góre gracza w osi Y.
+*	Lewy przycisk myszy – odpowiada za ruch w góre gracza w osi Y.
 
-• Implementacja interfejsu metody bool.
+* Implementacja interfejsu metody bool.
 
 ## Przeciwnicy:
 
 Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwników przez komponent ObjectPooler do ObstacleSpawner. ObstacleSpawner komponent odpowiada na przygotowaniu araz aktywacji obiektu przeciwnika.
 
-•	Przeciwnicy są inicjalizowani przed startem rozgrywki (object pooling).
+*	Przeciwnicy są inicjalizowani przed startem rozgrywki (object pooling).
 
-•	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeźeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
+*	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeźeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
 
-•	Przeciwnicy pojawiają się w równych odstępach czasu, odstępy czasowe są z góry nadane przed startem gry.
+*	Przeciwnicy pojawiają się w równych odstępach czasu, odstępy czasowe są z góry nadane przed startem gry.
 
-•	Po aktywacji obiektu przeciwnika, wektor pozycji przeciwnika jest resetowany do wartości podstawowych. 
+*	Po aktywacji obiektu przeciwnika, wektor pozycji przeciwnika jest resetowany do wartości podstawowych. 
 
-•	Przeciwnicy nie mają możliwości poruszania się w kierunku –X.
+*	Przeciwnicy nie mają możliwości poruszania się w kierunku –X.
 
-•	W grze występują 2 rodzaje przeciwników. 
+*	W grze występują 2 rodzaje przeciwników. 
 
-• Drzewo porusza się wyłącznie po osi X w kierunki –X o stałą wartość.
+* Drzewo porusza się wyłącznie po osi X w kierunki –X o stałą wartość.
 
-•	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje. Tworzy to efekt paraboli lotu.
+*	Ruch ptaka polega na dodanie wektora mocy (AddForce) i uczynienie go podatnym na grawitacje. Tworzy to efekt paraboli lotu.
 
 ![Image of enemy Movement](https://github.com/Latrostra/BallonBird/blob/master/picture2.PNG)
 
@@ -52,19 +52,19 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 Ilość punktów jest przechowywania w scriptable object (pseudo baza danych) i resetowana przy każdym restarcie rozgrywki.
 
-•	Menu restartu pozwala na zaczęcie gry od początku lub zakończenie działania gry.
+*	Menu restartu pozwala na zaczęcie gry od początku lub zakończenie działania gry.
 
-•	W menu restartu podana jest wartość uzyskanego wyniku.
+*	W menu restartu podana jest wartość uzyskanego wyniku.
 
-•	Punkty zwiększają się o stała wartość podaną przed startem programu.
+*	Punkty zwiększają się o stała wartość podaną przed startem programu.
 
-•	Punkty przyznawane są za każdą ominiętą przeszkode.
+*	Punkty przyznawane są za każdą ominiętą przeszkode.
 
-•	Ui zmienia się wraz z wystąpieniem odpowiedniego eventu.
+*	Ui zmienia się wraz z wystąpieniem odpowiedniego eventu.
 
 
 ## Środowisko:
 
-•	Tło przesuwa swój wektor przesunięcia, skutkując niekończącą pętlę tekstury. Podział tła na wiele elementów pozwala na dostosowywanie szybkości zmiany wektora przesunięcia. Skutkuje to uzyskaniem efektu paralaksy.
+*	Tło przesuwa swój wektor przesunięcia, skutkując niekończącą pętlę tekstury. Podział tła na wiele elementów pozwala na dostosowywanie szybkości zmiany wektora przesunięcia. Skutkuje to uzyskaniem efektu paralaksy.
 
-•	Tło trzęsie się jeżeli dojdzie do kolizji gracza z obiektem aktywującym efekt.
+*	Tło trzęsie się jeżeli dojdzie do kolizji gracza z obiektem aktywującym efekt.
