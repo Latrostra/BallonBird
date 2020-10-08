@@ -5,7 +5,9 @@ Gracz:
 
 Wszystkie potrzebne zależności do funkcjonowania obiektu gracz są przekazywane w komponencie PlayerBallon. Implementacja interfejsu IInput przekazuję stan wejścia do klasy PlayerBallon, która na tej podstawie podejmuję decyzję o zmiane wektora szybkości. Komponent health przekazuję niezbędne metody do zarządzania ilością zdrowia.
 
-•	Gracz ma możliwość ruchu po osi Y (góra i dół)  
+•	Gracz ma możliwość ruchu po osi Y (góra i dół)
+
+![Image of Movement](https://github.com/Latrostra/BallonBird/blob/master/picture.PNG)
 
 •	Ruch w górę jest uzależniony od przekazanego wejścia przez gracza powiększa to wartość wektora szybkości w osi Y.
 Ruch w dół jest automatyczny i zależy od wartości grawitacji. Wartość grawitacji pomniejsza wartość wektora przyspieszenia w osi Y.
