@@ -32,7 +32,7 @@ Działanie tego systemu polega na przekazywaniu dezaktywnych obiektów przeciwni
 
 *	Przeciwnicy są inicjalizowani przed startem rozgrywki (object pooling).
 
-*	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeźeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
+*	Przeciwnicy są aktywowani wraz z upływem czasu  i dezaktywowani, jeżeli dojdzie do kolizji między obiektem przeciwnika, a obiektem dezaktywującym.
 
 *	Przeciwnicy pojawiają się w równych odstępach czasu, odstępy czasowe są z góry nadane przed startem gry.
 
