@@ -1,5 +1,6 @@
 # BallonBird
 Gra polega na omijaniu przeszkód jako gracz. Za każdą ominiętą przeszkodę gracz zostaje nagrodzony wzrostem punktacji. Gracz przegrywa grę jeżeli skończą mu sie punkty życia.
+
 Gracz:
 •	Gracz ma możliwość ruchu po osi Y (góra i dół)  
 •	Ruch w górę jest uzależniony od przekazanego wejścia przez gracza powiększa to wartość wektora szybkości w osi Y.
